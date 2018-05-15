@@ -4,11 +4,6 @@ class Api::RecipesController < ApplicationController
     render 'index.json.jbuilder'
   end
   
-  def show
-    recipe_id = params["id"]
-    @recipe = Recipe.find(recipe_id)
-    render 'show.json.jbuilder'
-  end
   
   def create
     @recipe = Recipe.new(
@@ -19,6 +14,11 @@ class Api::RecipesController < ApplicationController
                         prep_time: params[:prep_time]
                         )
     @recipe.save
+    render 'show.json.jbuilder'
+  end
+  def show
+    recipe_id = params["id"]
+    @recipe = Recipe.find(recipe_id)
     render 'show.json.jbuilder'
   end
 

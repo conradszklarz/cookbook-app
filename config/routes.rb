@@ -7,3 +7,4 @@ Rails.application.routes.draw do
     delete '/recipes/:id' => 'recipes#destroy'
   end
 end
+ 
