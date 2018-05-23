@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+Recipe.create!([
+  {title: "Cookies", chef: "Cookie Monster", directions: "pour mix in bowl, add egg and milk, mix, cook", ingredients: "cookie mix, egg, milk", image_url: "http://cdn.grindtv.com/wp-content/uploads/2013/09/cookiemonster.jpeg", prep_time: 35},
+  {title: "lagsana", chef: "Bad Josh", directions: "add butterscotch to sock, add toothpaste to mixture, heat at 325 for 16 hours, put out fire", ingredients: "socks, toothpaste, butterscotch", image_url: "http://www.lesauce.com/wp-content/uploads/2013/01/tumblr_m2t8mqROz21qcs8rio1_500.gif", prep_time: 450},
+  {title: "Hand Sandwich", chef: "Not so bad Josh", directions: "take wrapper off cheese slice product, place cheese product in left hand, put your hands together", ingredients: "left hand, right hand, cheese slice product", image_url: "https://5f7mk98d5d69eqvo-zippykid.netdna-ssl.com/wp-content/uploads/2012/06/Hand-Sandwiches.jpeg", prep_time: 3},
+  {title: "Egg", chef: "Chicken", directions: "squeeze", ingredients: "Chicken", image_url: "https://authoritynutrition.com/wp-content/uploads/2013/07/chicken-and-egg-smaller.jpg", prep_time: 1},
+  {title: "Cake", chef: "Sweedish Chef", directions: "mix ingredients together in a bowl, stir well, give up, call a professional baker", ingredients: "egg, flour, milk, salt, shortening, baking soda, sugar, vanilla", image_url: "http://i192.photobucket.com/albums/z167/Great_WhiteSnark/R2-D2_Cake_Fail.jpg", prep_time: 30},
+  {title: "Junk food", chef: "The Swedish Chef", directions: "unwrap, enjoy", ingredients: "candy bar from vending machine", image_url: "http://vignette1.wikia.nocookie.net/bioshock/images/f/fe/Candy_Bar_Render_BSi.png/revision/latest?cb=20150502220128", prep_time: 65}
+])
